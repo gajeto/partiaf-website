@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Nasalization;
+    src: url(assets/fonts/nasalization-rg.ttf) format("opentype");
+  }
+
+  html,body,p,div,a,section,h1,h2,h3,h4,h5{
+      font-family: Nasalization;
+  }
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}

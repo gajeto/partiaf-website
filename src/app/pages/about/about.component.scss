@@ -1,0 +1,105 @@
+
+
+.header{
+    background-image: url('../../../assets/images/background_about.png');
+    width: 100%;
+    background-color: black;
+	margin-top: -9em;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.row{
+	margin-left: 0;
+    margin-right: 0;
+}
+
+body{
+    background-color: black !important;
+}
+
+.jumbotron{    
+	background: none;
+    margin: 0;
+
+
+    .header-little-text{
+        font-weight: 400;
+        color: white;
+        margin-top:1em;
+        margin-bottom:2em;
+        font-size: 	1em;
+    }
+    .about-text{
+        color: white;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+}
+
+.shadow-dark{
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0) 100%);
+}
+
+.header-text{
+	color: #ebc74e;
+    font-weight: 400;
+    margin-top: 3em;
+    font-size: 4.5vh;
+}
+
+.header-text-oficial{
+    font-weight: 500;
+	color: #ebc74e;
+	margin-top:4em;
+	font-size: 	1.5em
+}
+
+
+.channel{
+
+    background-color: white;
+    background: white;
+    .header-little-text{
+        font-weight: 400;
+        color: white;
+        margin-top:1em;
+        margin-bottom:2em;
+        font-size: 	1em;
+    }
+    .about-text{
+        color: rgb(95 95 100);
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+
+}
+
+.pay{
+
+    .header-little-text{
+        font-weight: 400;
+        color: white;
+        margin-top:1em;
+        margin-bottom:2em;
+        font-size: 	1em;
+    }
+    .about-text{
+        color: white;
+        font-size: 1.2em;
+        line-height: 1.8em;
+    }
+
+    .content-icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 5em;
+        .icon{
+            height: 8em;
+            margin-right: 1em;
+        }
+    }
+
+}

@@ -1,0 +1,10 @@
+<div class="input-group">
+    <div class="input-group-prepend" *ngIf="label">
+        <span class="input-group-text">
+            {{label}}
+        </span>
+    </div>
+    <input [min]="min!=null?min:null" [required]="required" [disabled]="disabled" type="{{type}}" 
+        class="input {{class}}{{isInvalid?' is-invalid':''}}" name="{{name}}"
+        placeholder="{{placeholder}}" [value]="value" (input)="onInput($event.target.value)" (touched)="onBlur()" (blur)="onBlur()">
+</div>

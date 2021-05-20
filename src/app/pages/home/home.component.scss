@@ -1,0 +1,104 @@
+.header{
+    background-image: url('../../../assets/images/background_header.png');
+    width: 100%;
+    background-color: black;
+	margin-top: -9em;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+    .jumbotron{    
+        background: none;
+        padding-top: 2em;
+        margin: 0;
+        background-color: #00000094 !important;
+    }
+    
+    .header-text{
+        color: white;
+        font-weight: 500;
+        margin-top: 3em;
+        font-size: 7vh;
+    }
+    
+    .header-text-oficial{
+        font-weight: 500;
+        color: #ebc74e;
+        margin-top:4em;
+        font-size: 	1.5em
+    }
+    
+    .header-little-text{
+        font-weight: 400;
+        color: white;
+        margin-top:1em;
+        margin-bottom:2em;
+        font-size: 	1em;
+    }
+}
+
+.row{
+	margin-left: 0;
+    margin-right: 0;
+}
+
+body{
+    background-color: black !important;
+}
+
+.cover{
+    
+    background-color: white;
+    background: white;
+    background-image: url('../../../assets/images/background_cover.png');
+    background-position: 38% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .jumbotron{
+        padding: 0 !important;
+        .container{
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+    }
+    .header-little-text{
+        font-weight: 400;
+        color: white;
+        margin-top:1em;
+        margin-bottom:2em;
+        font-size: 	1em;
+    }
+    .about-text{
+        color: rgb(95 95 100);
+        font-size: 1.2em;
+    }
+
+    .cover-title{
+        &.pay{
+            color: #5f5f64;
+            font-size: 5em;
+            line-height: 1em;
+        }
+        .without{
+            color: #5f5f64;
+            font-size: 10em;
+            float: left;
+            line-height: 0.7em;
+            margin-top: 0.2em;
+        }
+        .separator{
+            color: #ebc74e;
+            font-size: 11em;
+            float: left;
+            line-height: 0.7em;
+            font-weight: 100;
+        }
+        .options{
+            display: flex;
+            flex-direction: column;
+            color: #5f5f64;
+            font-size: 3em;
+            line-height: 1.35em;
+            float: left;
+        }
+    }
+}

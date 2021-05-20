@@ -1,0 +1,31 @@
+
+.navbar{
+	padding-top: 3em;
+    padding-bottom: 3em;
+    z-index: 1;
+
+}
+
+.logo{
+    height: 2.6em;
+}
+
+
+.navbar-icon{
+	color: #ebc74e !important;
+}
+
+.navbar-nav{    
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.nav-link{
+    margin-right: 1em;
+    cursor: pointer;
+}
+
+.dark{
+    background: rgb(0,0,0) !important;
+    background: linear-gradient(0deg, rgb(0 0 0 / 0%) 0%, black 100%) !important;
+}

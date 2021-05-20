@@ -1,0 +1,81 @@
+<app-loading [active]="loading" [image]="mainService.Images.loading"></app-loading>
+<form #form="ngForm" name="form" novalidate class="form-login" (ngSubmit)="send(form)">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <app-input [required]="true" #name="ngModel" [name]="'name'" [(ngModel)]="data.name"
+                            [class]="'form-control'" [placeholder]="'* Nombre:'"></app-input>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <app-input [required]="true" #email="ngModel" [name]="'email'" [(ngModel)]="data.email"
+                            [class]="'form-control'" [placeholder]="'* Email:'"></app-input>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <app-input [required]="true" #phone="ngModel" [name]="'phone'" [(ngModel)]="data.phone"
+                            [class]="'form-control'" [placeholder]="'* Móvil:'"></app-input>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <app-input [required]="true" #city="ngModel" [name]="'city'" [(ngModel)]="data.city"
+                            [class]="'form-control'" [placeholder]="'* Ciudad:'"></app-input>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="form-group content-contact">
+                        <label>* Motivo:</label>
+                        <div class="form-check">
+                            <input required class="form-check-input" type="radio" name="reason" [(ngModel)]="data.reason" value="1" [checked]="true">
+                            <label class="form-check-label" (click)="data.reason='1'">
+                                Información
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input required class="form-check-input" type="radio" name="reason" [(ngModel)]="data.reason" value="2">
+                            <label class="form-check-label" (click)="data.reason='2'">
+                                Asesor
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input required class="form-check-input" type="radio" name="reason" [(ngModel)]="data.reason" value="3">
+                            <label class="form-check-label" (click)="data.reason='3'">
+                                Negocio
+                            </label>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <app-textarea [rows]="4" [required]="true" #message="ngModel" [name]="'message'"
+                        [(ngModel)]="data.message" [class]="'form-control'" [placeholder]="'* Mensaje:'"></app-textarea>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col">
+                    <div class="form-group">
+                        <app-button [type]="'submit'" [class]="'btn btn-warning'" [text]="'Enviar'">
+                        </app-button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group content-contact">
+                        <p><label class="label-contact">INFO:</label> </p>
+                        <p><label class="label-contact">Email:</label>&nbsp;<a href="mailto:partiasf@gmail.com">partiasf@gmail.com</a> </p>
+                        <p><label class="label-contact">Móvil:</label>&nbsp;<a href="tel:+573133594742">+57 313 3594742</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

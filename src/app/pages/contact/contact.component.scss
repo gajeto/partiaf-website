@@ -1,0 +1,46 @@
+.header{
+    //background-image: url('../../../assets/images/background_contact.png');
+    width: 100%;
+    background-color: white;
+	margin-top: -9em;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.row{
+	margin-left: 0;
+    margin-right: 0;
+}
+
+body{
+    background-color: white !important;
+}
+
+.jumbotron{    
+	background: none;
+    padding-top: 2em;
+    margin: 0;
+}
+
+.header-text{
+	color: #5f5f64;
+    font-weight: 400;
+    margin-top: 3em;
+    font-size: 5vh;
+}
+
+.header-text-oficial{
+    font-weight: 500;
+	color: #ebc74e;
+	margin-top:4em;
+	font-size: 	1.5em
+}
+
+
+.header-little-text{
+    font-weight: 400;
+	color: white;
+	margin-top:1em;
+	margin-bottom:2em;
+	font-size: 	1em;
+}

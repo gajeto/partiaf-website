@@ -1,0 +1,52 @@
+.input{
+    padding: 1em 0 2.2em 0.5em;
+    background-color: #0000007a;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-color: black;
+    border-left: none;
+    margin-left: 0 !important;
+    border-radius: 0.4rem;
+    border: none !important;
+    font-size: 1.1em;
+}
+
+input.middle:focus {
+    outline-width: 0 !important;
+}
+.input-group-prepend{
+    border-right: none;
+    background-color: #0000007a;
+    color: white;
+    backdrop-filter: blur(10px);
+    border-color: black;
+    margin-right: 0 !important;
+    border-radius: 0.4rem 0 0 0.4rem;
+    .input-group-text{
+        background: none;
+        border: none;
+        color: white;
+        font-weight: 500;
+        font-size: 1.1em;
+    }
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;  
+  }
+  
+  input:-moz-placeholder { /* Firefox 18- */
+    color: #fff;  
+  }
+  
+  input::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff;  
+  }
+  
+  input:-ms-input-placeholder {
+    color: #fff;  
+  }
+  
+  input::placeholder {
+    color: #fff;  
+  }
