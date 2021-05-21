@@ -14,6 +14,7 @@ export function app(): express.Express {
   const distFolder = join(process.cwd(), '../browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
+  console.log('processPath',process.cwd());
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/master/modules/express-engine)
   server.engine('html', ngExpressEngine({
     bootstrap: AppServerModule,
